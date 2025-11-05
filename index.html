@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Genesis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000010;
+        color: #e0e0e0;
+      }
+      .glow {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 20px rgba(100, 100, 255, 0.5);
+      }
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .page-content {
+        transition: opacity 0.3s ease-in-out;
+      }
+      .page-content.fading {
+        opacity: 0;
+      }
+
+      /* New Cosmic Background Animations */
+      @keyframes orbit {
+        from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+        to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+      }
+      @keyframes orbit-moon {
+        from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
+        to { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+      }
+      @keyframes slow-rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse-nebula {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.05); }
+      }
+      @keyframes shoot {
+        0% { transform: translateX(-100px) translateY(0); opacity: 1; }
+        100% { transform: translateX(calc(100vw + 100px)) translateY(100px); opacity: 0; }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

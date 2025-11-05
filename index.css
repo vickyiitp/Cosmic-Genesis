@@ -1,0 +1,17 @@
+/* Base styles for the Cosmic Genesis app */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000010;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Additional cosmic-themed utilities */
+.cosmic-background {
+  background: radial-gradient(ellipse at center, #000428 0%, #004e92 100%);
+}
+
+.glow-effect {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+}
