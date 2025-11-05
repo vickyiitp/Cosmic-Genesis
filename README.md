@@ -1,5 +1,5 @@
 # 🌌 Cosmic Genesis
-
+DEPLOYED LINK - https://cosmic-genesis.vercel.app/
 **An Interactive Journey Through the Evolution of the Universe**
 
 Cosmic Genesis is a visually stunning, scroll-based web application that takes users on an immersive journey through the birth and evolution of the cosmos. Built with React, TypeScript, and powered by beautiful animations, it features interactive exploration of stars, galaxies, planets, and constellations.
